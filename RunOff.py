@@ -25,11 +25,11 @@ for i in range(numberVoters):
         first = input("Rank 1 : ")
 
     second = input("Rank 2 : ")
-    if (second not in candidates) and second==first:
+    if (second not in candidates) or second==first:
         second = input("Rank 2 : ")
 
     third = input("Rank 3 : ")
-    if third not in candidates and (third==first or third==second):
+    if third not in candidates or (third==first or third==second):
         third = input("Rank 3 : ")
 
     print()
